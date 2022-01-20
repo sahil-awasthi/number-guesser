@@ -66,10 +66,7 @@ document.querySelector('.check').addEventListener('click', function () {
     // When guess is wrong
   } else if (guess !== secretNumber) {
     if (score > 1) {
-      displayMessage(
-        'message',
-        guess > secretNumber ? '📈 Too high!' : '📉 Too low!'
-      );
+      displayMessage('message', guess > secretNumber ? '📈 High!' : '📉 Low!');
       score--;
       displayMessage('score', score);
       lightEffect();
